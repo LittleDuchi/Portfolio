@@ -1,0 +1,71 @@
+body,html{
+    background-color: rgb(61, 61, 61);
+    display: block;
+    border:0;
+    margin: 0;
+}
+
+header{
+    display: block;
+    background-size:cover;
+    background-image: url(majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai.jpg);
+    background-position:center;
+    overflow: hidden;
+}
+
+.Titulo{ 
+    margin: 3vh;
+    padding: 5vh;
+    overflow:visible;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 
+     "ROND" 0;
+}
+.apartados{
+    overflow:visible;
+    border:10vh;
+    border-radius: 2vh;
+    background-color: rgb(61, 61, 61);
+    margin: 3vh;
+    text-align:left;
+    transition:ease-in-out 750ms;
+    }
+
+.apartados hr{
+    margin: 3vh;
+}
+.apartados:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+}
+
+.datos{
+    padding: 1vh;
+    margin-top: 2vh;
+    margin: 2vh;
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "ROND" 0; 
+}
+
+.texto {
+    padding: 1vh;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: visible;
+    margin: 2vh;
+    text-align:left;
+    color: aliceblue;
+
+}
