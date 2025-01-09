@@ -3,7 +3,9 @@ body,html{
     display: block;
     border:0;
     margin: 0;
+    min-width: 500px;
 }
+
 
 header{
     display: block;
@@ -13,7 +15,9 @@ header{
     overflow: hidden;
 }
 
+/* TITULO corresponde a la caja que contiene LittleDuchi*/
 .Titulo{ 
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 3vh;
     padding: 5vh;
     overflow:visible;
@@ -27,8 +31,12 @@ header{
     font-variation-settings: 
      "ROND" 0;
 }
-.apartados{
-    overflow:visible;
+
+.apartados { 
+    display: block;
+    overflow: hidden;
+    height: 50vh;
+    min-width: 10vh;
     border:10vh;
     border-radius: 2vh;
     background-color: rgb(61, 61, 61);
@@ -43,6 +51,61 @@ header{
 .apartados:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
+}
+
+/*La clase "PERFIL" corresponde a la caja que contiene la clase e imagen perfil*/
+.PERFIL{
+    border-radius: 2vh;
+    margin-top: 3vh;
+    display: flex;
+    height: 50vh;
+    overflow: hidden;
+    background-color: rgb(61, 61, 61);
+    margin: 3vh;
+    transition:ease-in-out 750ms;
+}
+.PERFIL:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+}
+.PERFIL img{
+    align-self: center;
+    display: block;
+    border-radius: 50%;
+    margin: 2vh;
+    margin-top: 10vh;
+    max-width: 200px;
+    border: 1vh solid rgb(255, 255, 255);
+    min-width: 50px;
+}
+
+.PERFIL .apartadoPerfil { 
+    display: block;
+    overflow: hidden;
+    height: 50vh;
+    min-width: 13vh;
+    border:10vh;
+    border-radius: 2vh;
+    margin: 3vh;
+    text-align:left;
+    }
+
+.PERFIL .apartadoPerfil hr{
+    margin: 3vh;
+    margin-left: 1vh;
+}
+
+.datosP{
+    padding: 1vh;
+    margin-top: 3vh;
+    margin: 2vh;
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "ROND" 0; 
 }
 
 .datos{
