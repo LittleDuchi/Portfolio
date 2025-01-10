@@ -32,10 +32,17 @@ header{
      "ROND" 0;
 }
 
-.apartados { 
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr
+}
+.table-item { 
     display: block;
-    overflow: hidden;
-    height: 50vh;
+    overflow:scroll;
+    min-height: 300px;
+    max-height: 500px;
     min-width: 10vh;
     border:10vh;
     border-radius: 2vh;
@@ -45,67 +52,69 @@ header{
     transition:ease-in-out 750ms;
     }
 
-.apartados hr{
+.table-item hr{
     margin: 3vh;
 }
-.apartados:hover{
+.table-item:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
 }
 
-/*La clase "PERFIL" corresponde a la caja que contiene la clase e imagen perfil*/
-.PERFIL{
+/*La clase "PERFIL2" corresponde a la caja que contiene la clase PERFIL e imagen perfil*/
+.table-itemP{
     border-radius: 2vh;
     margin-top: 3vh;
-    display: flex;
-    height: 50vh;
-    overflow: hidden;
+    display:block;
+    height: auto;
+    min-width: 200px;
+    max-height: 500px;
+    overflow:hidden;
     background-color: rgb(61, 61, 61);
     margin: 3vh;
+    margin-bottom: 0vh;
     transition:ease-in-out 750ms;
 }
-.PERFIL:hover{
+.PERFIL2{
+    display:flex;
+    min-width: 35px;
+    max-height: 500px;
+    transition:ease-in-out 750ms;
+}
+
+.table-itemP hr{
+    margin: 3vh;
+}
+
+.table-itemP:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
 }
-.PERFIL img{
+.table-itemP img{
     align-self: center;
     display: block;
     border-radius: 50%;
     margin: 2vh;
-    margin-top: 10vh;
+    margin-top: 0vh;
+    min-width: 80px;
     max-width: 200px;
     border: 1vh solid rgb(255, 255, 255);
-    min-width: 50px;
+
+    top: 0 ;
 }
 
-.PERFIL .apartadoPerfil { 
+#apartadoPerfil { 
     display: block;
-    overflow: hidden;
-    height: 50vh;
-    min-width: 13vh;
+    overflow: auto;
+    max-height: 500px;
+    min-width: 200px;
     border:10vh;
     border-radius: 2vh;
-    margin: 3vh;
     text-align:left;
     }
 
 .PERFIL .apartadoPerfil hr{
     margin: 3vh;
     margin-left: 1vh;
-}
-
-.datosP{
-    padding: 1vh;
-    margin-top: 3vh;
-    margin: 2vh;
-    color: rgb(255, 255, 255);
-    font-size: 4vh;
-    font-family: "Doto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "ROND" 0; 
 }
 
 .datos{
@@ -130,5 +139,6 @@ header{
     margin: 2vh;
     text-align:left;
     color: aliceblue;
+    min-width: 200px;
 
 }
