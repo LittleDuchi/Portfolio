@@ -40,7 +40,7 @@ header{
     height: auto;
     min-width: 200px;
     max-width: auto;
-    max-height: 400px;
+    max-height: none;
     overflow:hidden;
     background-color: rgb(61, 61, 61);
     margin: 3vh;
