@@ -32,36 +32,8 @@ header{
      "ROND" 0;
 }
 
-
-.table{
-    display:flex;
-    flex-wrap: wrap;
-}
-.table-item { 
-    display: inline-block;
-    overflow:hidden;
-    min-height: auto;
-    min-width: 100px;
-    max-width: auto;
-    border:10vh;
-    border-radius: 2vh;
-    background-color: rgb(61, 61, 61);
-    margin: 3vh;
-    text-align:left;
-    transition:ease-in-out 750ms;
-    }
-
-.table-item hr{
-    margin: 3vh;
-}
-.table-item:hover{
-    background-color: rgb(50, 48, 48);
-    color: aliceblue;
-    overflow: auto;
-}
-
-/*La clase "PERFIL2" corresponde a la caja que contiene la clase PERFIL e imagen perfil*/
-.table-itemP{   
+/*La clase "contenedorPerfil" corresponde a la caja que contiene la clase PERFIL2 e imagen perfil*/
+.contenedorPerfil{   
     display:inline-block;
     border-radius: 2vh;
     margin-top: 3vh;
@@ -82,15 +54,15 @@ header{
     transition:ease-in-out 750ms;
 }
 
-.table-itemP hr{
+.contenedorPerfil hr{
     margin: 3vh;
 }
 
-.table-itemP:hover{
+.contenedorPerfil:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
 }
-.table-itemP img{
+.contenedorPerfil img{
     align-self: center;
     display: block;
     border-radius: 50%;
@@ -114,12 +86,12 @@ header{
 #apartadoPerfil:hover{
     overflow: auto;
 }
-.PERFIL .apartadoPerfil hr{
+.PERFIL #apartadoPerfil hr{
     margin: 3vh;
     margin-left: 1vh;
 }
-
-.datos{
+/*Estilo de los titulos de los apartados*/
+.subtitulo{
     padding: 1vh;
     margin-top: 2vh;
     margin: 2vh;
@@ -132,21 +104,35 @@ header{
     font-variation-settings: "ROND" 0; 
 }
 
-.texto {
-    padding: 1vh;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    overflow: visible;
-    font-size: clamp(12px, 2vw, 24px);
-    margin: 2vh;
-    text-align:left;
-    color: aliceblue;
-    min-width: 200px;
+/*Estilo del contenedor que contiene los Estudios, contactos y gráficos*/
+
+.table{
+    display:block;
+}
+.table-item { 
+    display: inline-block;
+    overflow:hidden;
     min-height: auto;
+    min-width: 100px;
+    max-width: 50%;
+    border:10vh;
+    border-radius: 2vh;
+    background-color: rgb(61, 61, 61);
+    margin: 3vh;
+    text-align:left;
+    transition:ease-in-out 750ms;
+    }
+
+.table-item hr{
+    margin: 3vh;
+}
+.table-item:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+    overflow: auto;
 }
 
-
+/*Iconos de contactos*/
 .icon {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -161,4 +147,20 @@ header{
     max-width: 60px;
     height:50px ;
   }
+
+
+/*Contiene el estilo de los textos de los apartados*/
+.texto {
+    padding: 1vh;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: visible;
+    font-size: clamp(12px, 2vw, 24px);
+    margin: 2vh;
+    text-align:left;
+    color: aliceblue;
+    min-width: 200px;
+    min-height: auto;
+}
   
