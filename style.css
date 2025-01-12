@@ -34,16 +34,15 @@ header{
 
 
 .table{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr
+    display:flex;
+    flex-wrap: wrap;
 }
 .table-item { 
-    display: block;
-    overflow:scroll;
-    min-height: 300px;
-    max-height: 500px;
-    min-width: 10vh;
+    display: inline-block;
+    overflow:hidden;
+    min-height: auto;
+    min-width: 100px;
+    max-width: auto;
     border:10vh;
     border-radius: 2vh;
     background-color: rgb(61, 61, 61);
@@ -58,16 +57,18 @@ header{
 .table-item:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
+    overflow: auto;
 }
 
 /*La clase "PERFIL2" corresponde a la caja que contiene la clase PERFIL e imagen perfil*/
-.table-itemP{
+.table-itemP{   
+    display:inline-block;
     border-radius: 2vh;
     margin-top: 3vh;
-    display:block;
     height: auto;
     min-width: 200px;
-    max-height: 500px;
+    max-width: auto;
+    max-height: 400px;
     overflow:hidden;
     background-color: rgb(61, 61, 61);
     margin: 3vh;
@@ -77,7 +78,7 @@ header{
 .PERFIL2{
     display:flex;
     min-width: 35px;
-    max-height: 500px;
+    max-height: auto;
     transition:ease-in-out 750ms;
 }
 
@@ -98,20 +99,21 @@ header{
     min-width: 80px;
     max-width: 200px;
     border: 1vh solid rgb(255, 255, 255);
-
     top: 0 ;
 }
 
 #apartadoPerfil { 
     display: block;
-    overflow: auto;
-    max-height: 500px;
+    overflow: hidden;
+    height: auto;
     min-width: 200px;
     border:10vh;
     border-radius: 2vh;
     text-align:left;
     }
-
+#apartadoPerfil:hover{
+    overflow: auto;
+}
 .PERFIL .apartadoPerfil hr{
     margin: 3vh;
     margin-left: 1vh;
@@ -136,9 +138,27 @@ header{
     font-weight: 400;
     font-style: normal;
     overflow: visible;
+    font-size: clamp(12px, 2vw, 24px);
     margin: 2vh;
     text-align:left;
     color: aliceblue;
     min-width: 200px;
-
+    min-height: auto;
 }
+
+
+.icon {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .icon img {
+    border-radius: 20%;
+    margin: 3vh;
+    margin-top: 0vh;
+    min-width: 40px;
+    max-width: 60px;
+    height:50px ;
+  }
+  
