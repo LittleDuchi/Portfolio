@@ -107,10 +107,9 @@ header{
 /*Estilo del contenedor que contiene los Estudios, contactos y gráficos*/
 
 .table{
-    display:block;
+    display: flex;
 }
 .table-item { 
-    display: inline-block;
     overflow:hidden;
     min-height: auto;
     min-width: 100px;
