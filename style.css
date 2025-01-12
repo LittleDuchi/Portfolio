@@ -32,18 +32,89 @@ header{
      "ROND" 0;
 }
 
+/*La clase "contenedorPerfil" corresponde a la caja que contiene la clase PERFIL2 e imagen perfil*/
+.contenedorPerfil{   
+    display:inline-block;
+    border-radius: 2vh;
+    margin-top: 3vh;
+    height: auto;
+    min-width: 200px;
+    max-width: auto;
+    max-height: 400px;
+    overflow:hidden;
+    background-color: rgb(61, 61, 61);
+    margin: 3vh;
+    margin-bottom: 0vh;
+    transition:ease-in-out 750ms;
+}
+.PERFIL2{
+    display:flex;
+    min-width: 35px;
+    max-height: auto;
+    transition:ease-in-out 750ms;
+}
+
+.contenedorPerfil hr{
+    margin: 3vh;
+}
+
+.contenedorPerfil:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+}
+.contenedorPerfil img{
+    align-self: center;
+    display: block;
+    border-radius: 50%;
+    margin: 2vh;
+    margin-top: 0vh;
+    min-width: 80px;
+    max-width: 200px;
+    border: 1vh solid rgb(255, 255, 255);
+    top: 0 ;
+}
+
+#apartadoPerfil { 
+    display: block;
+    overflow: hidden;
+    height: auto;
+    min-width: 200px;
+    border:10vh;
+    border-radius: 2vh;
+    text-align:left;
+    }
+#apartadoPerfil:hover{
+    overflow: auto;
+}
+.PERFIL #apartadoPerfil hr{
+    margin: 3vh;
+    margin-left: 1vh;
+}
+/*Estilo de los titulos de los apartados*/
+.subtitulo{
+    padding: 1vh;
+    margin-top: 2vh;
+    margin: 2vh;
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "ROND" 0; 
+}
+
+/*Estilo del contenedor que contiene los Estudios, contactos y gráficos*/
 
 .table{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr
+    display:block;
 }
 .table-item { 
-    display: block;
-    overflow:scroll;
-    min-height: 300px;
-    max-height: 500px;
-    min-width: 10vh;
+    display: inline-block;
+    overflow:hidden;
+    min-height: auto;
+    min-width: 100px;
+    max-width: 50%;
     border:10vh;
     border-radius: 2vh;
     background-color: rgb(61, 61, 61);
@@ -58,87 +129,38 @@ header{
 .table-item:hover{
     background-color: rgb(50, 48, 48);
     color: aliceblue;
-}
-
-/*La clase "PERFIL2" corresponde a la caja que contiene la clase PERFIL e imagen perfil*/
-.table-itemP{
-    border-radius: 2vh;
-    margin-top: 3vh;
-    display:block;
-    height: auto;
-    min-width: 200px;
-    max-height: 500px;
-    overflow:hidden;
-    background-color: rgb(61, 61, 61);
-    margin: 3vh;
-    margin-bottom: 0vh;
-    transition:ease-in-out 750ms;
-}
-.PERFIL2{
-    display:flex;
-    min-width: 35px;
-    max-height: 500px;
-    transition:ease-in-out 750ms;
-}
-
-.table-itemP hr{
-    margin: 3vh;
-}
-
-.table-itemP:hover{
-    background-color: rgb(50, 48, 48);
-    color: aliceblue;
-}
-.table-itemP img{
-    align-self: center;
-    display: block;
-    border-radius: 50%;
-    margin: 2vh;
-    margin-top: 0vh;
-    min-width: 80px;
-    max-width: 200px;
-    border: 1vh solid rgb(255, 255, 255);
-
-    top: 0 ;
-}
-
-#apartadoPerfil { 
-    display: block;
     overflow: auto;
-    max-height: 500px;
-    min-width: 200px;
-    border:10vh;
-    border-radius: 2vh;
-    text-align:left;
-    }
+}
 
-.PERFIL .apartadoPerfil hr{
+/*Iconos de contactos*/
+.icon {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .icon img {
+    border-radius: 20%;
     margin: 3vh;
-    margin-left: 1vh;
-}
+    margin-top: 0vh;
+    min-width: 40px;
+    max-width: 60px;
+    height:50px ;
+  }
 
-.datos{
-    padding: 1vh;
-    margin-top: 2vh;
-    margin: 2vh;
-    color: rgb(255, 255, 255);
-    font-size: 4vh;
-    font-family: "Doto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "ROND" 0; 
-}
 
+/*Contiene el estilo de los textos de los apartados*/
 .texto {
     padding: 1vh;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
     overflow: visible;
+    font-size: clamp(12px, 2vw, 24px);
     margin: 2vh;
     text-align:left;
     color: aliceblue;
     min-width: 200px;
-
+    min-height: auto;
 }
+  
