@@ -109,7 +109,7 @@ header{
     margin-top: 2vh;
     margin: 2vh;
     color: rgb(255, 255, 255);
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -120,19 +120,23 @@ header{
 /*Estilo del contenedor que contiene los Estudios, contactos y gráficos*/
 
 .table{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2vh;
+    width: 100%;
+    min-width: 200px;
 }
 .table-item { 
-    overflow:hidden;
+    overflow:visible;
     min-height: auto;
-    min-width: 100px;
-    max-width: 50%;
+    min-width: 175px;
+    max-width: 100%;
     border:10vh;
     border-radius: 2vh;
-    background-color: rgb(61, 61, 61);
     margin: 3vh;
     text-align:left;
     transition:ease-in-out 750ms;
+
     }
 
 .table-item hr{
@@ -156,14 +160,8 @@ header{
     min-width: fit-content;
     max-width: max-content;
     height:50px ;
-  }
-  .icon img {
-    border-radius: 20%;
-    margin: 5vw; /* Margen del 10% del ancho de la ventana por defecto */
-    min-width: fit-content;
-    max-width: max-content;
-    height: 50px;
-}
+    margin: 5vw;
+    }
 
 /* Para pantallas pequeñas (menos de 600px de ancho) */
 @media (max-width: 600px) {
@@ -191,8 +189,10 @@ header{
     margin: 2vh;
     text-align:left;
     color: aliceblue;
-    min-width: 200px;
+    min-width: 100px;
     min-height: auto;
+    word-wrap: break-word; /* Permite la división de palabras largas */ 
+    hyphens:auto;
 }
 
 /*Estilo de proyectos*/
@@ -211,10 +211,24 @@ header{
     transition:ease-in-out 750ms;
 }
 
+.contenedorProyectos:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+
+
+}
+.inProyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2vh;
+    width: 100%;
+    min-width: 200px;
+}
+
 .contenedorProyectos hr{
     margin: 3vh;
 }
-.Proyectos{
+#Proyectos{
     padding: 1vh;
     margin-top: 2vh;
     margin: 3vh;
