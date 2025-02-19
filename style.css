@@ -161,14 +161,14 @@ header h1{
 /* Para pantallas pequeñas (menos de 600px de ancho) */
 @media (max-width: 600px) {
     .icon img {
-        margin: 2vw; /* Margen del 5% del ancho de la ventana */
+        margin: 1vw; /* Margen del 5% del ancho de la ventana */
     }
 }
 
 /* Para pantallas muy pequeñas (menos de 400px de ancho) */
 @media (max-width: 400px) {
     .icon img {
-        margin: 2vw; /* Margen del 2% del ancho de la ventana */
+        margin: 1vw; /* Margen del 2% del ancho de la ventana */
     }
 }
 
@@ -191,48 +191,15 @@ header h1{
 }
 
 /*Estilo de proyectos*/
-.contenedorProyectos{
-    display:block;
-    border-radius: 2vh;
-    margin-top: 3vh;
-    height: auto;
-    min-width: 300px;
-    max-width: 100%;
-    max-height: none;
-    overflow:hidden;
-    background-color: rgb(61, 61, 61);
-    margin: 3vh;
-    margin-bottom: 2vh;
-    transition:ease-in-out 750ms;
-}
-
-.contenedorProyectos:hover{
-    background-color: rgb(50, 48, 48);
-    color: aliceblue;
-
-
-}
-.inProyectos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2vh;
-    width: 100%;
-    min-width: 200px;
-}
-
-.contenedorProyectos hr{
-    margin: 3vh;
-}
-#Proyectos{
-    padding: 1vh;
-    margin-top: 2vh;
-    margin: 3vh;
-    color: rgb(255, 255, 255);
-    font-size: 4vh;
-    font-family: "Doto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "ROND" 0; 
-    text-align: center;
+.ProyectosTitulo{
+  padding: 1vh;
+  margin-top: 2vh;
+  margin: 2vh;
+  color: rgb(255, 255, 255);
+  font-size: 3.5vh;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "ROND" 0; 
 }
