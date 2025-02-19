@@ -192,6 +192,7 @@ header h1{
 
 /*Estilo de proyectos*/
 .ProyectosTitulo{
+  text-align: center;
   padding: 1vh;
   margin-top: 2vh;
   margin: 2vh;
@@ -202,4 +203,39 @@ header h1{
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "ROND" 0; 
+}
+.Proyectos{
+    
+    display:block;
+    border-radius: 2vh;
+    margin-top: 3vh;
+    height: auto;
+    min-width: 200px;
+    max-width: 100%;
+    overflow:hidden;
+    background-color: rgb(61, 61, 61);
+    margin: 3vh;
+    margin-bottom: 5vh;
+    transition:ease-in-out 750ms;
+}
+.Proyectos:hover{
+    background-color: rgb(50, 48, 48);
+    color: aliceblue;
+}
+
+
+.Proyectos hr{
+    margin: 3vh;
+}
+.Proyectos h2{
+    margin: 0%;
+}
+.Proyectos img{
+    align-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 5%;
+    margin: 5vw;
 }
